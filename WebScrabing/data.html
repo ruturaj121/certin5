@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      counter-reset: Serial;
+      text-align: center;
+    }
+    .auto-index td:first-child:before {
+      counter-increment: Serial; /* Increment the Serial counter */
+      content: counter(Serial); /* Display the counter */
+    }
+  </style>
+
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th colspan="6" style="background-color: red">
+          Audix Cyber Threat Advisory
+        </th>
+      </tr>
+      <tr style="background-color: rgb(255, 207, 130)">
+        <td>Sr.No.</td>
+        <td>Original Issue Date</td>
+        <td>Cert-in Vulnerability Note</td>
+        <td>CVE ID</td>
+        <td>Name of the Vulnerability</td>
+        <td>Severity</td>
+      </tr>
+      <tr class="auto-index">
+        <td class="first" rowspan="4" style="background-color: rgb(255, 207, 130)"></td>
+        <td><!-- Date -->dyjdyjy</td>
+        <td>
+          <!-- Cert-in Vulnerability Note -->
+        </td>
+        <td><!-- CVE ID -->dyjtyyyktk</td>
+        <td>
+          <!--  Name of the Vulnerability -->
+        </td>
+        <td style="color: red">
+          <!-- Severity-->
+          <!-- HIGH -->
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(255, 207, 130)">
+          Software Affected And Version
+        </td>
+        <td colspan="4">
+          <!-- Software Affected And Version-->
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(255, 207, 130)">Description</td>
+        <td colspan="4">
+          <!-- Description-->
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(255, 207, 130)">Recomendation</td>
+        <td colspan="4">
+          <!-- Recomendation -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

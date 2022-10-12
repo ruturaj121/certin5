@@ -1,0 +1,43 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "\r\nconst cheerio = require('cheerio');\r\n\r\nconst data = 'https://www.cert-in.org.in/';\r\n\r\nconst $ = cheerio.load(data);\r\n\r\nconst da = $('#print_content > table > tbody > tr > td > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(6) > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(3) > td.Content > span.BContent > a').text;\r\n\r\n\r\nconsole.log(da);\r\n\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[Function: text]",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
